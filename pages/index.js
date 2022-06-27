@@ -11,7 +11,7 @@ function HomePage({ session }) {
   return (
     <>
       <Head>
-        <title>Babylon | Home</title>
+        <title>AIO | Home</title>
         <meta name='keywords' content='demo' />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
       </Head>
