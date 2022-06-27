@@ -33,31 +33,31 @@ function Profile() {
                         </div>
                         <div className='details'>
                             <div className='data_dtls'>
-                                <div class="field_text_num">
+                                <div className="field_text_num">
                                     <label>Name:</label>
                                     <input type="text" required placeholder='Enter your Name' value={session.user.name} disabled/>
                                     <div className='helptext'></div>
                                 </div>
-                                <div class="field_text_num">
+                                <div className="field_text_num">
                                     <label>Email Address:</label>
                                     <input type="email" required placeholder='Enter your email address' value={session.user.email} disabled/>
                                     <div className='helptext'></div>
                                 </div>
-                                <div class="field_text_num">
+                                <div className="field_text_num">
                                     <label>Phone Number:</label>
                                     <input type="number" required placeholder='Enter your phone number' />
                                     <div className='helptext'></div>
                                 </div>
-                                <div class="field_text_num">
+                                <div className="field_text_num">
                                     <label>Password:</label>
                                     <input type="text" required placeholder='Enter your password' />
                                     <div className='helptext'></div>
                                 </div>
-                                <div class="field_date">
+                                <div className="field_date">
                                     <label>Birth Date:</label>
                                     <input type="date" required placeholder='Enter Your birth date' />
                                 </div>
-                                <div class="field_text_num">
+                                <div className="field_text_num">
                                     <label>Sex at birth:</label>
                                     <input type="text" required placeholder='Enter your sex at birth' />
                                     <div className='helptext'></div>
