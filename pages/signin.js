@@ -50,7 +50,7 @@ function LoginPage() {
                         <Link href="/"><Image src='/google.png' width={48} height={48} /></Link>
                     </div>
                 </div>
-                <div className='have_account'>Dont' have an account? <Link href="/login"><span>Sign Up</span></Link></div>
+                <div className='have_account'>Dont&apos; have an account? <Link href="/login"><span>Sign Up</span></Link></div>
             </div>
         </div>
 
