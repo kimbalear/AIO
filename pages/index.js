@@ -40,7 +40,7 @@ function HomePage({ session }) {
         </div>
         <div className='des'>
           <div className='title'>
-            <h2>We’re employee benefit at 7500+ hospital</h2>
+            <h2>We're employee benefit at 7500+ hospital</h2>
           </div>
           <div className='col1'>
             <p className='l1'>7,777</p>
