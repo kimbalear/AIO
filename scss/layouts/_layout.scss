@@ -1,0 +1,158 @@
+.content {
+    height: 100%;
+    //background-color: #F3F4F9;
+
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    max-width: 600;
+    margin: 0 auto;
+    background-color: #FFF;
+
+
+    .form {
+        float: left;
+        padding: 16px;
+        width: 50%;
+        height: 100vh;
+        background-color: #FFF;
+
+        .logo {
+            float: right;
+        }
+
+        h1 {
+            margin-top: 10%;
+        }
+
+        h6 {
+            margin: 16px 0 30px;
+        }
+
+        button {
+            width: 100%;
+            margin-bottom: 21px;
+            padding: 0.9em 2em;
+        }
+
+        .social_profile {
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .social_icons {
+            width: max-content;
+            height: 48px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+
+
+            .icon_social {
+                float: left;
+                margin: 0 8px;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .have_account {
+            clear: both;
+            text-align: center;
+
+            span {
+                color: #20ADE4;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .login_up {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    @media only screen and (max-width: 799px) {
+        .login_up {
+            display: none;
+        }
+
+        .form {
+            justify-self: center;
+            width: 100%;
+        }
+    }
+}
+
+.profile {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 10%;
+
+    .cont {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto 1fr;
+        gap: 8px 8px;
+        grid-template-areas:
+            "title title"
+            "top_lyt top_cta"
+            "avatar details";
+        background-color: #FFF;
+        padding: 0 16px;
+
+        .title {
+            grid-area: title;
+            text-align: center;
+            padding-top: 118px;
+        }
+
+        .top_lyt {
+            grid-area: top_lyt;
+            padding-top: 56px;
+        }
+
+        .avatar {
+            grid-area: avatar;
+            padding: 44px 54px 0;
+
+            img {
+                border-radius: 50px;
+            }
+
+        }
+
+        .details {
+            grid-area: details;
+
+            .data_dtls {
+                width: 100%;
+                height: auto;
+                margin-bottom: 15%;
+            }
+
+            button {
+                float: right;
+            }
+        }
+
+        .top_cta {
+            grid-area: top_cta;
+            padding-top: 56px;
+            justify-self: flex-end;
+            color: #2461FF;
+            font-weight: 600;
+        }
+    }
+}
