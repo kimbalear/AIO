@@ -35,12 +35,12 @@ function HomePage({ session }) {
               <Image src='/provider_locator.png' width={48} height={48} />
             </div>
             <h4>Provider Locator</h4>
-            <p>We'll help you find a clinic nearby</p>
+            <p>We&apos;ll help you find a clinic nearby</p>
           </div>
         </div>
         <div className='des'>
           <div className='title'>
-            <h2>We're employee benefit at 7500+ hospital</h2>
+            <h2>We&apos;re employee benefit at 7500+ hospital</h2>
           </div>
           <div className='col1'>
             <p className='l1'>7,777</p>
