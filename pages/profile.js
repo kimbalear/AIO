@@ -1,14 +1,19 @@
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
+import { useState } from "react";
 import Link from 'next/link'
 import Image from 'next/image'
 
 function Profile() {
 
+    const [isDisabled, setIsDisabled] = useState(true);
+
+    const handleClick = () => {
+        setIsDisabled(!isDisabled)
+    };
+
     const { data: session, status } = useSession()
     const router = useRouter()
-
-    let paso = '100%'
 
     if (status !== 'loading' && status === 'authenticated') {
         let Rut = "A completar"
@@ -26,7 +31,7 @@ function Profile() {
                             <h2>Your Information</h2>
                         </div>
                         <div className='top_cta'>
-                            <p>Edit</p>
+                        {isDisabled ? (<p onClick={handleClick}>Edit</p>):(<></>)} 
                         </div>
                         <div className='avatar'>
                             <img src={session.user.image} width={100} height={100} />
@@ -35,12 +40,12 @@ function Profile() {
                             <div className='data_dtls'>
                                 <div className="field_text_num">
                                     <label>Name:</label>
-                                    <input type="text" required placeholder='Enter your Name' value={session.user.name} disabled/>
+                                    <input type="text" required placeholder='Enter your Name' value={session.user.name} disabled={isDisabled} />
                                     <div className='helptext'></div>
                                 </div>
                                 <div className="field_text_num">
                                     <label>Email Address:</label>
-                                    <input type="email" required placeholder='Enter your email address' value={session.user.email} disabled/>
+                                    <input type="email" required placeholder='Enter your email address' value={session.user.email} disabled={isDisabled} />
                                     <div className='helptext'></div>
                                 </div>
                                 <div className="field_text_num">
@@ -63,7 +68,8 @@ function Profile() {
                                     <div className='helptext'></div>
                                 </div>
                             </div>
-                            <button>Save</button>
+                            {isDisabled ? (<></>):(<button onClick={handleClick}>Save</button>)} 
+                            
                         </div>
 
 
